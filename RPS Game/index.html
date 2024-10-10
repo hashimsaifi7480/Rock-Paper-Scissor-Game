@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="CSS/style.css">
-
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="game-container">
+  <div class="container">
     <h1>Rock, Paper, Scissors</h1>
-    <p>Select your choice:</p>
-    <button class="choice" data-choice="rock">Rock</button>
-    <button class="choice" data-choice="paper">Paper</button>
-    <button class="choice" data-choice="scissors">Scissors</button>
-    <p id="result"></p>
+    <div id="game-container">
+      <p id="game-message">Do you want to play rock, paper, or scissors?</p>
+      <div id="choice-buttons">
+        <button id="rock" class="rps-btn">Rock</button>
+        <button id="paper" class="rps-btn">Paper</button>
+        <button id="scissors" class="rps-btn">Scissors</button>
+      </div>
+      <div id="move-display">
+        <p><strong>Your Move:</strong> <span id="player-move">-</span></p>
+        <p><strong>Computer's Move:</strong> <span id="computer-move">-</span></p>
+      </div>
+      <div id="game-result"></div>
+      <button id="play-again" class="hidden">Play Again</button>
+    </div>
   </div>
-  <script src="JS/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
